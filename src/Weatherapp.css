@@ -1,0 +1,15 @@
+.box{
+    /* align-items: center; */
+    text-align: center;
+}
+.searchBox{
+margin-bottom:25px ;
+}
+.Infobox{
+    align-items: center;
+     text-align: center; 
+}
+.container{
+    display: flex;
+    justify-content: center;
+}
