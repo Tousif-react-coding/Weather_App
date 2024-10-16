@@ -6,9 +6,9 @@ import { useState } from 'react';
 export default function SearchBox({updateInfo}){
     let[city,setCity] = useState("");
     let [error,setError]= useState(false)
-    const API_URL = "https://api.openweathermap.org/data/2.5/weather"
-    const API_KEY = "530014f7a509c983badf8b5bd9a737e7"
-    
+    const API_URL = import.meta.env.VITE_API_URL;
+const API_KEY = import.meta.env.VITE_API_KEY;
+console.log(API_URL);
     let getWeatherInfo = async()=>{
         try{
 let response = await fetch(`${API_URL}?q=${city}&appid=${ API_KEY}&units=metric`)
